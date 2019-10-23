@@ -1,0 +1,9 @@
+<?php
+$dane=file('test123?.txt');
+
+$ile=count($dane)-1;
+$final = $dane[rand(0,$ile)];
+$final1 = trim($final);
+
+echo '{"api":"'.$final1.'"}';
+?>
